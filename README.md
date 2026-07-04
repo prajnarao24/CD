@@ -2,21 +2,6 @@
 
 A hand-built compiler that determines the largest number among given values using conditional (`if`) logic — implemented **without parser generators like Lex/Yacc**. The project manually constructs an SLR (Simple LR) parsing table from grammar rules and validates tokenized input against it, demonstrating the internal mechanics of compiler design.
 
-## Table of Contents
-- [Overview](#overview)
-- [How It Works](#how-it-works)
-  - [1. Tokenization](#1-tokenization)
-  - [2. Grammar Definition](#2-grammar-definition)
-  - [3. FIRST & FOLLOW Set Computation](#3-first--follow-set-computation)
-  - [4. LR(0) Item Set & State Construction](#4-lr0-item-set--state-construction)
-  - [5. SLR Parse Table Construction](#5-slr-parse-table-construction)
-  - [6. Parsing & Validation](#6-parsing--validation)
-- [Tech Stack](#tech-stack)
-- [Sample Output](#sample-output)
-- [Key Concepts Demonstrated](#key-concepts-demonstrated)
-- [How to Run](#how-to-run)
-- [Why This Project](#why-this-project)
-
 ## Overview
 
 Most compiler projects rely on tools like Lex and Yacc to auto-generate lexers and parsers. This project instead builds the core phases of a compiler manually in Python:
